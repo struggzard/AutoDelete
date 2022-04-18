@@ -11,7 +11,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	autodelete "github.com/riking/AutoDelete"
+	autodelete "github.com/struggzard/AutoDelete"
 	"gopkg.in/yaml.v2"
 )
 

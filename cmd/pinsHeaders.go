@@ -8,7 +8,7 @@ import (
 	"os"
 
 	"github.com/bwmarrin/discordgo"
-	autodelete "github.com/riking/AutoDelete"
+	autodelete "github.com/struggzard/AutoDelete"
 	"gopkg.in/yaml.v2"
 )
 

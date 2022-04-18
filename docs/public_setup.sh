@@ -30,10 +30,10 @@ logout
 # ssh autodelete@
 
 mkdir discord
-mkdir -p go/src/github.com/riking/
-cd go/src/github.com/riking; git clone https://github.com/riking/AutoDelete
+mkdir -p go/src/github.com/struggzard/
+cd go/src/github.com/struggzard; git clone https://github.com/struggzard/AutoDelete
 cd ~/discord
-REPO=$HOME/go/src/github.com/riking/AutoDelete
+REPO=$HOME/go/src/github.com/struggzard/AutoDelete
 cp $REPO/docs/build.sh .
 cp $REPO/docs/start_command.sh .
 
@@ -44,7 +44,7 @@ logout
 
 mkdir /mnt/autodelete
 mkdir /mnt/autodelete/data
-REPO=/home/autodelete/go/src/github.com/riking/AutoDelete
+REPO=/home/autodelete/go/src/github.com/struggzard/AutoDelete
 SVR_NR=4
 install $REPO/docs/svr${SVR_NR}/mnt-autodelete-data.mount /etc/systemd/system
 install $REPO/docs/svr${SVR_NR}/prometheus-autodelete-${SVR_NR}.service /etc/systemd/system
@@ -69,7 +69,7 @@ nano config.yml
 go version
 ./build.sh
 
-REPO=/home/autodelete/go/src/github.com/riking/AutoDelete
+REPO=/home/autodelete/go/src/github.com/struggzard/AutoDelete
 cat $REPO/docs/start_command.sh
 tmux new-session -s shard16
 
