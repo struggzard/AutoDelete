@@ -16,7 +16,7 @@ import (
 )
 
 var flagShardID = flag.Int("shard", -1, "shard ID of this bot")
-var flagNoHttp = flag.Bool("nohttp", false, "skip http handler")
+var flagNoHttp = flag.Bool("nohttp", true, "skip http handler")
 var flagMetricsPort = flag.Int("metrics", 6130, "port for metrics listener; shard ID is added")
 var flagMetricsListen = flag.String("metricslisten", "127.0.0.4", "addr to listen on for metrics handler")
 
